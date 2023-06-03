@@ -14,7 +14,7 @@ pip install flask
 ```
 flask run --host=0.0.0.0
 ```
-4. 訪問 [http://localhost:5000](http://localhost:5000)
+4. 訪問 `http://localhost:5000/picbed/{album}` 
 
 ### 通過docker運行
 ```bash
@@ -34,7 +34,7 @@ docker run \
 docker-compose up -d --build
 ```
 
-這個指令會建立一個名為 `picbed` 的 Docker 映像檔，然後創建一個名為 `picbed` 的容器並運行它。您可以通過瀏覽器訪問 `http://localhost:5000` 來訪問 PicBed。
+這個指令會建立一個名為 `picbed` 的 Docker 映像檔，然後創建一個名為 `picbed` 的容器並運行它。您可以通過瀏覽器訪問 `http://localhost:5000/picbed/{album}` 來訪問 PicBed。
 
 ## 授權協議
 
