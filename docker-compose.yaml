@@ -1,0 +1,13 @@
+version: '3'
+services:
+  picbed:
+    image: picbed
+    build: .
+    container_name: picbed
+    restart: always
+    volumes:
+      - image:/image
+    ports:
+      - 5000:5000
+volumes:
+  image:
